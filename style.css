@@ -1,7 +1,28 @@
-.box {
-    background-color: green;
-    width: 300px;
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body { padding:2rem; background:#f4f4f4; }
+
+.box{
+    width:300px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    background-color: blue;
+    color: white;
 }
+/* Side-by-side boxes */
+.inline-container {
+    font-size:0;               /* Remove inline-block whitespace */
+}
+.box-left, .box-right {
+    display:inline-block;
+    width:50%;                 /* 50% width each */
+    height:100px;              /* Fixed height */
+    font-size:1rem;            /* Restore font size */
+    line-height:100px;         /* Vertical center */
+    text-align:center;
+    color:#fff;
+    font-weight:bold;
+}
+.box-left  { background:blue; }
+.box-right { background:red; }

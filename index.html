@@ -1,13 +1,27 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>
-            Hello, World!
-        </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Block Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Previous centered box -->
+    <section class="container">
         <div class="box">
-            This is a box.
+            Centered 300px Box (Flexbox)
         </div>
-    </body>
+    </section>
+
+    <!-- NEW: Inline-block side-by-side boxes -->
+    <section class="inline-section">
+        <div class="inline-container">
+            <div class="box-left">BLUE (Left)</div>
+            <div class="box-right">RED (Right)</div>
+        </div>
+    </section>
+
+</body>
 </html>
