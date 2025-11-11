@@ -26,3 +26,33 @@ body { padding:2rem; background:#f4f4f4; }
 }
 .box-left  { background:blue; }
 .box-right { background:red; }
+
+/* Responsive boxes */
+.reponsive-box-section {
+    display: grid;
+    gap : 1rem;
+    padding : 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 600px) {
+    .reponsive-box-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .reponsive-box-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.box-reponsive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px; 
+  background-color: tomato;
+}
+
+
