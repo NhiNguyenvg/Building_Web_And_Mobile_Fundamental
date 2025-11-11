@@ -1,0 +1,18 @@
+h1 {
+  color: #24a0ed;
+}
+
+button {
+  color: #fff;
+  background-color: #24a0ed;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+button:hover {
+  color: #24a0ed;
+  background-color: white;
+  border: 1px solid #24a0ed;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+$primary-color: #24a0ed;
+h1 {
+ color: $primary-color;
+}
+button {
+ color: #fff;
+ background-color: $primary-color;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 15px;
+ &:hover{
+ color: $primary-color;
+ background-color: #ffff;
+ border: 1px solid $primary-color;
+ }
+} 
