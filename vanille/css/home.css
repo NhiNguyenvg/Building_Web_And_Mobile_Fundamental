@@ -1,0 +1,43 @@
+h1 {
+  color: #0f0f0f;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.box1 {
+  background-color: green;
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box3 {
+  background-color: pink;
+}
+
+.box4 {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=home.css.map */

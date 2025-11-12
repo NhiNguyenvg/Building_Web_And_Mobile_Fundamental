@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npx http-server . -o -p 8000",
+    "start":"npm run css && npm run serve",
+    "css": "npx sass main.scss css/main.css && npx sass home.scss css/home.css && npx sass dashboard.scss css/dashboard.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.94.0"
+    "sass": "^1.94.2",
+    "http-server": "^14.1.1"
   }
 }

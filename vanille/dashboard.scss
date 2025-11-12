@@ -1,0 +1,54 @@
+// Variables for home 
+$primary-color : #0f0f0f ;
+$color1:purple;
+$color2:yellow;
+$color3: #3498db; // Light blue
+$color4:#1abc9c; // Teal
+$background-color: white;
+$padding_body : 10px;
+$padding_box: 3px;
+
+h1
+{
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+
+.box
+{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
+// Individual box colors
+.box1 {
+  background-color: $color1;
+}
+
+.box2 {
+  background-color: $color2;
+}
+
+.box3 {
+  background-color: $color3;
+}
+
+.box4 {
+  background-color: $color4;
+}
