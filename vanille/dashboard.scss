@@ -1,3 +1,5 @@
+@use "shared";
+
 // Variables for home 
 $primary-color : #0f0f0f ;
 $color1:purple;
@@ -27,13 +29,7 @@ body {
 
 .box
 {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  margin: 10px;
+  @include shared.box_base;
 }
 
 // Individual box colors
