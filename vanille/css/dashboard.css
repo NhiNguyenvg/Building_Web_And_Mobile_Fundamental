@@ -1,3 +1,19 @@
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(50, 241, 244);
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
 h1 {
   color: #0f0f0f;
   margin-bottom: 20px;
@@ -21,7 +37,6 @@ body {
   align-items: center;
   font-weight: bold;
   margin: 10px;
-  border-radius: 50px;
 }
 
 .box1 {
