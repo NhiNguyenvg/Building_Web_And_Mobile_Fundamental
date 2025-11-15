@@ -1,23 +1,14 @@
 {
   "name": "user",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "ts-node src/backend/server.ts",
     "build": "tsc",
-    "start": "node dist/backend/server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0"
+    "watch": "tsc -w",
+    "serve": "live-server --port=8080 --watch=dist,index.html"
   },
   "devDependencies": {
-    "@types/express": "^5.0.5",
-    "@types/node": "^24.10.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.6.2",
+    "live-server": "^1.2.2"
   }
 }
