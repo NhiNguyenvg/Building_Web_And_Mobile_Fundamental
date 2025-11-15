@@ -2,13 +2,15 @@
   "name": "user",
   "version": "1.0.0",
   "private": true,
+
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "serve": "live-server --port=8080 --watch=dist,index.html"
+    "build": "tsc && npm run copy-assets",
+    "copy-assets": "node -e \"require('fs').copyFileSync('index.html','dist/index.html'); require('fs').copyFileSync('src/users.json','dist/users.json'); require('fs').copyFileSync('favicon.ico','dist/favicon.ico')\"",
+    "dev": "npm run build && http-server dist -p 8080 -c-1"
   },
+
   "devDependencies": {
     "typescript": "^5.6.2",
-    "live-server": "^1.2.2"
+    "http-server": "^14.1.1"
   }
 }

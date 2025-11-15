@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Max Mustermann",
+    "email": "max@example.de",
+    "telephone": "+49 30 123456",
+    "address": {
+      "street": "Musterstraße",
+      "houseNumber": "42",
+      "postalCode": "10115",
+      "city": "Berlin",
+      "country": "DE"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Erika Schmidt",
+    "email": "erika@example.de",
+    "telephone": "+49 89 987654",
+    "address": {
+      "street": "Beispielweg",
+      "houseNumber": "7b",
+      "postalCode": "80331",
+      "city": "München",
+      "country": "DE"
+    }
+  }
+]
