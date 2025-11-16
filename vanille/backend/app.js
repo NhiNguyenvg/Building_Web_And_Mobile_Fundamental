@@ -1,11 +1,16 @@
-var express =require('express');
-var app = express();
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const PORT = 8081;
 
-app.get('/', function(req, res){
-    res.send("Hello World");
+app.use(cors()); 
+
+const users = require('./users.json');
+
+app.get('/users', (req, res) => {
+  res.json(users);
 });
 
-var server =app.listen(5000, function(){
-    console.log("Express App running at http:/127.0.0.1:5000/");
+app.listen(PORT, () => {
+  console.log(`Backend: http://localhost:${PORT}/users`);
 });
-
